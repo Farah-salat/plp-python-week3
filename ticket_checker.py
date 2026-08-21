@@ -1,6 +1,10 @@
 age = int(input("Enter your age: "))
 
-if age >= 18:
-    print("You can buy an adult ticket.")
+is_adult = age >= 18
+
+print(f"Adult status: {is_adult}")
+
+if is_adult:
+    print("Adult ticket price: $10")
 else:
-    print("You need a child ticket.")
+    print("Child ticket price: $5")
